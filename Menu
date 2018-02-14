@@ -156,8 +156,8 @@ public class Menu {
             {
                 case "add":                    
                         optinAdd();                       
-                    break; 
-		case "info":
+                    break;
+                case "info":
                     if(numberOfCustomers==0){
                         System.out.println("Bank haven't accounts.Please add an account to the bank before this option!");
                         break;
@@ -177,7 +177,7 @@ public class Menu {
                         break;
                     }
                     optionWithdraw();                   
-                    break;   
+                    break;
                 case "exit":
                     System.out.println("GoodBye!");
                     exit=false;
