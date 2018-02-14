@@ -1,0 +1,73 @@
+
+package main;
+
+public class bankAccount {
+    private String accountName;
+    private String accountAdress;
+    private double balance;
+    private int accountNumber;
+    
+    
+    bankAccount(String name,String adress,double balance , int number)
+    {
+        accountName=name;
+        accountAdress=adress;
+        this.balance=balance;
+        accountNumber=number;
+    }
+    
+    public String getAccountName()
+    {
+        return accountName;
+    }
+    
+    public void setAccountName(String name)
+    {
+        accountName=name;
+    }
+    
+    public String getAccountAdress()
+    {
+        return accountAdress;
+    }
+    
+    public void setAccountAdress(String adress)
+    {
+        accountAdress=adress;
+    }
+    
+    public double getAccountBalance()
+    {
+        return balance;
+    }
+    
+    public void setBalance(double balance)
+    {
+        this.balance=balance;
+    }
+    
+    public int getAccountNumber()
+    {
+        return accountNumber;
+    }
+    
+    public void setAccountNumber(int accountNumber)
+    {
+        this.accountNumber=accountNumber;
+    }
+    
+    public void deposit(double balance)
+    {
+        this.balance+=balance;
+    }
+    
+    public boolean withdraw(double amount)
+    {
+        if(balance>=amount)
+        {
+            balance-=amount;
+            return true;
+        }
+        return false;
+    }      
+}
